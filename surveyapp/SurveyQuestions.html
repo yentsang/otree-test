@@ -1,0 +1,15 @@
+{{ block title }}
+    Please answer the question of the survey
+{{ endblock }}
+{{ block content }}
+    Question 1
+    {{ formfield player.age }}
+
+    Question 2
+    {{ formfield player.gender}}
+
+    Question 3
+    {{ formfield player.is_lefthanded }}
+    {{ next_button }}
+
+{{ endblock }}

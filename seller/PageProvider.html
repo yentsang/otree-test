@@ -1,0 +1,17 @@
+{{ extends "otree/Page.html" }}
+{{ load otree static }}
+
+{{ block title }} Take your fucking decision! {{ endblock }}
+
+{{ block content }}
+<p>
+    You are {{ player.role }} id {{ player.id_in_group }} e {{ Constants.p1_role }}
+</p>
+
+<p>
+    {{ formfields group.decision_provider = "Do you want to do what?" }}
+</p>
+
+{{ next_button }}
+
+{{ endblock }}
